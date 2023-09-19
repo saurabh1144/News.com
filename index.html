@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex ">
+            <a href="#">
+                <h4 onclick="reload()">News.com</h4>
+            </a>
+            <div class="nav-link ">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="cricket" onclick="onNavclick('cricket')">Cricket</li>
+                    <li class="hover-link nav-items" id="finance" onclick="onNavclick('finance')">Finance</li>
+                    <li class="hover-link nav-items" id="politics"  onclick="onNavclick('politics')">Politics</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+         </div>        
+
+
+    </main>
+
+    <template id="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="" alt="news-img" class="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title" class="news-title">This is Title</h3>
+                <h5 id="news-source" class="news-source">end gadget </h5>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro quae autem reprehenderit quasi. Ipsum quidem porro numquam deleniti eaque illum repudiandae tempore quasi! Quaerat incidunt sed harum culpa a.</p>
+            </div>
+        </div>
+
+    </template>
+    <main></main>
+
+ <script src="script.js"></script>   
+</body>
+</html>

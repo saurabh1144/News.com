@@ -1,0 +1,137 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-family:  sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--primary-text-color);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;    
+}
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 15px;
+}
+.nav-link ul{
+    gap: 16px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: var(--secondary-text-color);
+}
+.hover-link:active{
+    color: red;
+}
+.search-bar{
+    height: 30px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    padding-inline: 10px;
+    border-radius: 8px;
+    border: 2px solid gainsboro;
+}
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+.search-button:hover{
+    background-color: var(--primary-text-color);
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.card{
+    width: 360px;
+    height: 400px;
+    box-shadow: 0 0 4px #bbd0e2;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9fdff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #bbd0e2;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+
+}
+.nav-items.active{
+    color: red;
+}
+
